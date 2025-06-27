@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+python-docx
+PyPDF2
+transformers
+torch # Or tensorflow
+accelerate
+scikit-learn
+numpy

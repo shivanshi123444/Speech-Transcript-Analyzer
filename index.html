@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting Analysis Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Meeting Analysis Tool</h1>
+
+        <div class="upload-section">
+            <input type="file" id="transcriptFile" accept=".txt,.docx,.pdf">
+            <button id="analyzeButton">Analyze Transcript</button>
+        </div>
+
+        <div id="loading" class="hidden">
+            <p>Analyzing transcript... This may take a moment.</p>
+        </div>
+
+        <div id="results" class="hidden">
+            <h2>Analysis Results</h2>
+
+            <div class="result-section">
+                <h3>Summary</h3>
+                <p id="summaryContent"></p>
+            </div>
+
+            <div class="result-section">
+                <h3>Action Items</h3>
+                <ul id="actionItemsList"></ul>
+            </div>
+
+            <div class="result-section">
+                <h3>Key Insights</h3>
+                <ul id="insightsList"></ul>
+            </div>
+
+            <div class="result-section">
+                <h3>Speaker Attributed Statements</h3>
+                <div id="attributedStatementsList"></div>
+            </div>
+
+            <div class="result-section">
+                <h3>Speaker Attributed Action Items & Insights</h3>
+                <div id="attributedActionItemsInsights"></div>
+            </div>
+
+            <div class="export-section">
+                <h3>Export Results</h3>
+                <button id="exportPdfButton">Export as PDF (Dummy)</button>
+                <button id="exportCsvButton">Export as CSV (Dummy)</button>
+            </div>
+        </div>
+
+        <div id="error" class="hidden">
+            <p id="errorMessage" class="error-message"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
